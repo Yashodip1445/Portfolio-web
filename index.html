@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yashodip Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills1">Skills</a></li>
+          <li><a href="#project-section">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+
+
+
+
+
+        <!-- image --><img src="img.jpg" alt="Yashodip Wani" class="about-img">
+
+      </nav>
+      <div class="header-text">
+        <h1> Hi, I am <span> Yashodip</span><br>and I am a Passionate</h1>
+        <h3><span id="element"></span></h3><br>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-6 text-center ftco-animate">
+            <p>
+              <a href="./Resume/Resume_Main.pdf" class="btn btn-primary py-4 px-5" target="_blank">Download
+                CV</a>
+              <a href="https://www.linkedin.com/in/yashodipwani17" class="btn btn-primary py-4 px-5"
+                target="_blank">Visit LinkedIn</a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src=".jpg">
+        </div>
+        <div class="about-col-1">
+          <h1 class="sub-title">About Me</h1>
+          <p>'I'm a final-year Computer Science Engineering student with a strong foundation in Java, Data Structures,
+            and Full Stack Web Development using the MERN stack.
+
+            I’m passionate about building real-world applications and love exploring the intersection of Software
+            Engineering and Generative AI.
+
+            Currently, I’m seeking internship opportunities where I can apply my skills, grow as a developer, and
+            contribute to impactful projects while learning from industry experts.
+
+            Technical Skills: Java, DSA, MongoDB, Express.js, React.js, Node.js, Git, GenAI tools
+
+            Let’s connect and create something meaningful together!</p>
+          <div class="tab-titles">
+            <!-- <p class="tab-links active-link" onclick="opentab('experience')">Experience</p> -->
+            <p class="tab-links" onclick="opentab('Education')">Education</p>
+          </div>
+
+          <!-- <div class="tab-contents active-tab" id="experience">
+           <ul>
+              <ul>
+                <li><span> K<p style="color: white;">[FEB-2024 to JULY-2024]</p></span>
+                  </li>
+                <li><span> <p style="color: white;">[JAN-2024 to FEB-2024]</p></span>Fullstack
+                  Developer
+                  Intern </li>
+              </ul> 
+
+           </ul>
+          </div>  -->
+          <div class="tab-contents" id="Education">
+            <ul>
+              <!-- <li><span>Pratibha Institute of business Management<p style="color: white;">[2022-2024]</p></span>Master
+                of Computer Application<br>Grade A+</li> -->
+              <li><span> G H Raisoni College of Engineering Management<p style="color: white;"> [2022-2026]</p>
+                </span>Bachelor of Computer Science </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <section class="ftco-section" id="skills1">
+      <div class="container">
+        <h1 class="sub-title text-center">Skills</h1>
+        <div class="skills-list">
+          <div class="skills-entry">
+            <i class="fab fa-html5"></i>
+            <h2>HTML5</h2>
+            <p>Proficient in HTML for creating structured and semantic web pages, including forms,
+              tables, and multimedia integration.</p>
+
+          </div>
+          <div class="skills-entry">
+            <i class="fab fa-css3-alt"></i>
+            <h2>CSS3</h2>
+            <p>Proficient in CSS3 for creating responsive designs, styling web pages, and implementing
+              modern layouts using Flexbox and Grid.</p>
+          </div>
+
+          <div class="skills-entry">
+            <i class="fab fa-js"></i>
+            <h2>JavaScript</h2>
+            <p>Experienced in JavaScript for building dynamic, interactive web applications, including
+              DOM manipulation, event handling, and asynchronous programming.</p>
+          </div>
+            <div class="skills-entry">
+            <i class="fab fa-css3-alt"></i>
+            <h2>Tailwind CSS</h2>
+            <p>Proficient in Tailwind CSS for building modern, responsive, and utility-first user interfaces efficiently.</p>
+            </div>
+          <div class="skills-entry">
+            <i class="fa-brands fa-react"></i>
+            <h2>React</h2>
+            <p>Experienced in React for building dynamic, component-based user interfaces and managing
+              state with hooks and Redux.</p>
+          </div>
+          <div class="skills-entry">
+            <i class="fab fa-java"></i>
+            <h2>Java</h2>
+            <p>Proficient in Java for developing robust, scalable applications, with expertise in
+              object-oriented programming, multithreading, and data structures.</p>
+          </div>
+          <div class="skills-entry">
+          <i class="fas fa-database"></i>
+          <h2>MySQL</h2>
+          <p>Proficient in MySQL for designing, managing, and optimizing relational databases,
+            including writing complex queries and ensuring data integrity.</p>
+          </div>
+          
+          <div class="skills-entry">
+            <i class="fab fa-node-js"></i>
+            <h2>Node.js</h2>
+            <p>Experienced in Node.js for building scalable server-side applications, RESTful APIs, and real-time services using JavaScript.</p>
+          </div>
+            
+            <div class="skills-entry">
+           
+            <h2>Express.js</h2>
+            <p>Proficient in Express.js for building scalable RESTful APIs, middleware integration, and server-side application logic in Node.js environments.</p>
+            </div>
+           
+            <div class="skills-entry">
+            <i class="fab fa-git-alt"></i>
+            <h2>Git</h2>
+            <p>Experienced with Git for version control, branching, merging, and collaborative software development workflows.</p>
+            </div>
+            <div class="skills-entry">
+            <i class="fab fa-github"></i>
+            <h2>GitHub</h2>
+            <p>Proficient in using GitHub for code hosting, pull requests, issue tracking, and project collaboration.</p>
+            </div>
+          
+            <div class="skills-entry">
+            <i class="fas fa-code"></i>
+            <h2>VS Code</h2>
+            <p>Experienced in using Visual Studio Code (VS Code) for efficient coding, debugging, and project management with a wide range of extensions.</p>
+            </div>
+            <div class="skills-entry">
+            <i class="fas fa-leaf"></i>
+            <h2>MongoDB</h2>
+            <p>Proficient in MongoDB for designing, querying, and managing NoSQL databases, including schema design, aggregation, and performance optimization.</p>
+            </div>
+
+      </div>
+  </div>
+  </div>
+  </section>
+
+
+  <!--Project Sestion--->
+
+  <section class="ftco-section" id="project-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Projects</h1>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <div class="block-20 zoom-effect" style="background-image: url('images/logo.jpg');"></div>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">Listening and Booking Application</h3>
+                <p>Build a full-stack property listing and booking app using Node.js, Express.js, EJS, and MongoDB.
+                  Implemented secure user authentication with session management.
+                  Enabled dynamic property listings with image uploads via Multer.
+                  Designed responsive, server-rendered views for a smooth user experience.
+                  Version-controlled with Git and deployed to a cloud platform.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry justify-content-end">
+              <div class="block-20 zoom-effect" style="background-image: url('images/proj_2.jpg');"></div>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading">Ai Code Review </h3>
+                <p>Developed a web-based application using the MERN stack to analyze code for quality, readability,
+                  and security.
+                  Integrated Gemini API for real-time AI-driven code reviews and actionable feedback.
+                  Implemented GitHub OAuth for seamless user login and personalized code analysis.
+                  Used Tailwind CSS for a responsive and modern UI design..</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+            <div class="blog-entry">
+              <div class="block-20 zoom-effect" style="background-image: url('images/proj_3.jpg');"></div>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"> Creative Agency Web Portfolio</h3>
+                <p> Creative Agency Web Portfolio
+                  Developed a responsive and animated website for a fictional design agency to display services,
+                  projects, testimonials, and a contact form in a clean and modern layout.
+                  Tech Stack: React.js, Tailwind CSS, GSAP!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+    </div>
+  </section>
+
+
+  <!----contact----->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i><a
+              href="mailto:yashodipwani12004@gmail.com">yashodipwani172004@gmail.com</a>
+          </p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/yashodipwani17" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Yashodip1445" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            </a>
+
+            <a href="https://leetcode.com/u/Yashodip1445/" target="_blank">
+              <i class="fa-solid fa-code"></i>
+              <img src="https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png" 
+                 alt="leetcode" width="30" height="30" style="vertical-align: middle;">
+            </a>
+          </div>
+
+        </div>
+        <div class="contact-right">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="21073265-644c-426c-9b5a-8c68759814f7">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="copyright">
+      <p>Copyright <i class="fa-regular fa-copyright"></i> Yashodip Wani | All Rights Reserved</p>
+    </div>
+
+
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Fullstack Developer...', 'Front-End Developer...', 'Back-End Developer...'],
+        typeSpeed: 50,
+      });
+
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (let tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        document.querySelector(`[onclick="opentab('${tabname}')"]`).classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+    </script>
+
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <!-- External JS File -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+
+</html>

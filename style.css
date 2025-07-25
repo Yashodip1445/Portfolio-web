@@ -1,0 +1,785 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+body {
+  background: black;
+    color: #fff;
+
+}
+.about-img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  float: right;
+  margin-left: 30px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.about-col-1 {
+  flex: 1;
+  min-width: 280px;
+}
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+   
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+
+ }
+
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position:relative
+   
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(170, 107, 228);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Expand the line on hover */
+   
+}
+
+.header-text{
+    margin-top:10%;
+    font-size:30px;  
+}
+
+.header-text h1{
+    font-size: 50px;
+    margin-top: 50px;
+
+}
+.header-text h1 span{
+    color: rgb(170, 107, 228);
+}
+
+.header-text .btn{
+  
+    background-color: #000121;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+}
+#element {
+  color: rgb(170, 107, 228);
+}
+ /*---------------about----------------*/
+
+ #about{
+    padding:80px 0 0 0;
+    color: #fbf2f2d5;
+ }
+
+ .row{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+ }
+ .about-col-1{
+    flex-basis: 40%;
+
+ }
+ .about-col-1 img{
+    width:80%;
+    border-radius:10px;
+ }
+ .about-col-1{
+    flex-basis: 50%;
+ }
+ #about .sub-title{
+  margin-bottom: 10px;
+ }
+ #about p{
+  text-align: justify;
+ }
+ .sub-title{
+  
+    font-size:40px;
+    font-weight: 600;
+    color:#fff
+ }
+
+ .tab-titles{
+    display:flex;
+    margin: 10px 0 20px;
+
+    
+ }
+ .tab-links{
+    margin-right: 50px;
+    font-size:18px;
+    font-weight: 500;
+    cursor:pointer;
+    position: relative;
+ }
+
+ .tab-links::after{
+    content:'';
+    width:0;
+    height: 3px;
+    background:rgb(170, 107, 228);
+    position:absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+ }
+
+ .tab-links.active-link::after{
+    width:50%
+
+ }
+ .tab-contents ul li  {
+    list-style:none;
+    margin:10px 0;
+
+ }
+ .tab-contents ul li  span{
+color: rgb(170, 107, 228);
+font: size 14px;
+ }
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents.active-tab{
+    display: block;
+}
+
+/* resume */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .heading-section {
+    margin-bottom: 40px;
+  }
+  
+  .heading-section h1.big,
+  .heading-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .heading-section p {
+    font-size: 1.1rem;
+  }
+  
+  /* Resume Section Styles */
+  #resume-section {
+    background: black;
+    padding: 60px 0;
+  }
+  
+  #resume-section .big-2 {
+    font-size: 4rem;
+    color: white;
+  }
+  
+  #resume-section h2.mb-4 {
+    font-size: 2rem;
+    color: #f6f3f0bb;
+    margin-bottom: 20px;
+  }
+  
+  #resume-section .underline {
+    width: 100px;
+    height: 3px;
+    background: #ffbd39;
+    margin: 10px auto;
+  }
+  
+  .resume-wrap {
+    background: #999999;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-wrap .date {
+    font-size: 1rem;
+    color: #ffbd39;
+}
+
+
+  
+  .resume-wrap h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .resume-wrap .position {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .resume-wrap ul {
+    list-style: disc;
+    padding-left: 20px;
+  }
+  
+  .resume-wrap ul li {
+    margin-bottom: 10px;
+  }
+  
+  .btn-primary {
+    background: rgb(170, 107, 228);
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background:rgb(170, 107, 228);
+  }
+  
+  /* Hire Me Section */
+  .ftco-hireme {
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    color: #fff;
+  }
+  
+  .ftco-hireme .btn-primary {
+    background: #ffbd39;
+    border: none;
+    padding: 15px 30px;
+  }
+  
+  .ftco-hireme .btn-primary:hover {
+    background: #ffbd39;
+  }
+  
+  .ftco-hireme .heading h4 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+/* Skills Section */
+#skills1 {
+ 
+
+}
+
+.sub-title {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 20px;
+}
+
+.skills-entry {
+  background: #1e1c3c;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.skills-entry i {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.skills-entry h2 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.skills-entry p {
+  font-size: 14px;
+  color: #b0b0b0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.skills-entry a {
+  text-decoration: none;
+  color: #f39c12;
+  font-size: 14px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.skills-entry a:hover {
+  color: #ffd700;
+}
+
+.skills-entry:hover {
+  background: #211e4f;
+  transform: translateY(-10px);
+}
+
+
+/*
+  #skills1 {
+    padding: 30px 80px;
+    background-color: black;
+}
+
+.heading-section {
+    margin-bottom: 50px;
+}
+
+.heading-section h1.big {
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+}
+
+.heading-section p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.skills-entry {
+  background: #1e1c3c;
+  padding: 40px;
+  font-size: 13px;
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.skills-entry i {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.skills-entry h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.skills-entry p {
+    font-size: 14px;
+    color: #777;
+}
+*/
+
+.skills-entry:hover {
+    transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+    .skills-entry {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .skills-entry {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+  
+  /* Counter Section */
+  #section-counter .block-18 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #section-counter .block-18 .number {
+    font-size: 3rem;
+    color: #00ff37;
+    font-weight: bold;
+  }
+  
+  #section-counter .block-18 span {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .heading-section h1.big,
+    .heading-section h2 {
+      font-size: 2rem;
+    }
+  
+    .resume-wrap h2 {
+      font-size: 1.2rem;
+    }
+  
+    .resume-wrap .date,
+    .resume-wrap .position {
+      font-size: 1rem;
+    }
+  
+    .ftco-hireme .btn-primary {
+      padding: 10px 20px;
+    }
+  }
+  
+  
+/* Project Section */
+#project-section {
+  background-color: black;
+  padding: 60px 0;
+}
+
+#project-section .heading-section {
+  margin-bottom: 50px;
+}
+
+#project-section .big-2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: white;
+}
+
+#project-section .blog-entry {
+  background: #1e1c3c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#project-section .blog-entry:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#project-section .heading {
+  color:white ;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+#project-section p {
+  color: #a7a2a2;
+  margin-top: 15px;
+}
+
+#project-section .underline {
+  width: 60px;
+  height: 4px;
+  background: #ad50ff;
+  margin: 20px auto;
+}
+
+#project-section .row.d-flex {
+  justify-content: center;
+}
+
+#project-section .text {
+  text-align: left;
+}
+
+
+
+.ftco-section.ftco-hireme {
+  background-size: cover;
+  background-position: center center;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ftco-section.ftco-hireme .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.ftco-section.ftco-hireme .row {
+  width: 100%;
+}
+
+.ftco-section.ftco-hireme .col-md-7 {
+  margin: 0 auto;
+}
+
+.ftco-section.ftco-hireme .heading {
+  margin-top: 20px;
+}
+
+.ftco-section.ftco-hireme h2 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.ftco-section.ftco-hireme h2 span a button {
+  margin-left: 10px;
+}
+
+.ftco-section.ftco-hireme h4 {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.contact-left
+{
+  flex-basis:35%;
+
+}
+.contact-right{
+  flex-basis: 60%;
+  
+}
+.contact-left p{
+  margin-top: 30px;
+}
+
+.contact-left p i{
+  color: rgb(170, 107, 228);
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.contact-left a {
+  color: rgb(170, 107, 228);
+  text-decoration: none;
+}
+.contact-left a:hover {
+  text-decoration: underline;
+}
+.social-icons a{
+  text-decoration: none;
+  font-size:30px;
+  margin-right:15px;
+  color:#ababab;
+  display:inline-block;
+  transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: rgb(170, 107, 228);
+    transform: translate(-5px);
+
+}
+
+.contact-right form{
+  width:100%;
+}
+
+form input, form textarea{
+  width:100%;
+  border:0;
+  outline:none;
+  background: #262626;
+  padding:15px;
+  margin: 15px 0;
+  color:#fff;
+  font-size:18px;
+  border-radius: 6px;
+}
+
+form .btn2 {
+    border: 1px solid rgb(44, 31, 74);
+    padding: 10px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(170, 107, 228);
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+
+.copyright {
+  width: 100%;
+  text-align: center; /* This should center the content */
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center; /* Center content if using flex */
+  align-items: center; /* Ensure content is centered vertically */
+}
+
+.copyright i{
+  color:rgb(170, 107, 228)
+}
+
+nav .fas{
+  display:none;
+}
+
+.logo{
+  width: 100px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-color: black;
+  }
+
+  .header-text {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+
+  .header-text h1 {
+    font-size: 30px;
+  }
+
+  nav .fas {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  nav ul {
+    background:  rgb(29, 7, 50);
+    position: fixed;
+    top: 0;
+    right: -200px; /* Start off-screen */
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+
+  nav ul .fa-times {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  
+
+  .sub-title {
+    font-size: 40px;
+  }
+
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%;
+  }
+
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+
+  .about-col-2 {
+    font-size: 14px;
+  }
+
+  .tab-links {
+    font-size: 16px;
+    margin-right: 20px;
+  }
+
+  .contact-left,
+  .contact-right {
+    flex-basis: 100%;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+  
+}
+
+
+
+
+
+
+
+
