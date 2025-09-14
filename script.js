@@ -1,8 +1,10 @@
 // Typed.js Initialization
 document.addEventListener("DOMContentLoaded", function () {
-  const typed = new Typed('#element', {
-    strings: ['Fullstack Developer...', 'Front-End Developer...', 'Back-End Developer...'],
-    typeSpeed: 50,
+  const typed = new Typed('.auto-type', {
+    strings: ['Yashodip Wani', 'a Web Developer', 'a UI/UX Designer'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true,
   });
 
   // Smooth Scrolling for Anchor Links
@@ -31,14 +33,39 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Side Menu
-  const sidemenu = document.getElementById("sidemenu");
-  window.openmenu = function () {
-    sidemenu.style.right = "0";
-  };
-  window.closemenu = function () {
-    sidemenu.style.right = "-200px";
-  };
+  // Modern Mobile Menu Functionality
+  const mobileMenu = document.getElementById('mobile-menu');
+  const navMenu = document.querySelector('.nav-menu');
+
+  mobileMenu.addEventListener('click', function() {
+    mobileMenu.classList.toggle('active');
+    navMenu.classList.toggle('active');
+  });
+
+  // Close mobile menu when clicking on nav links
+  const navLinks = document.querySelectorAll('.nav-link');
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+      navMenu.classList.remove('active');
+    });
+  });
+
+  // Close mobile menu when clicking outside
+  window.addEventListener('click', function(e) {
+    if (!e.target.closest('.navbar')) {
+      mobileMenu.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
+  });
+
+  // Handle window resize for mobile menu
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+      mobileMenu.classList.remove('active');
+      navMenu.classList.remove('active');
+    }
+  });
 
   // Tabs in About Section
   const tablinks = document.getElementsByClassName("tab-links");
